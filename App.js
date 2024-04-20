@@ -15,6 +15,7 @@ export default function App() {
             <TaskCard></TaskCard>
             <TaskCard></TaskCard>
             <TaskCard></TaskCard>
+            <TaskCard></TaskCard>
         </View>
       </View>
     </View>
