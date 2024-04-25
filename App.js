@@ -7,6 +7,7 @@ export default function App() {
       <View style={styles.taskWrapper}>
         <Text style={styles.title}>Today's Tasks</Text> 
         <View style={styles.items}>
+          <TaskCard style={styles.content}></TaskCard>
         </View>
       </View>
     </View>
@@ -27,10 +28,13 @@ const styles = StyleSheet.create({
     fontWeight: 'bold',
   },
   items: {
-    
+    backgroundColor: '#FFFFFF',
+    width: 335,
+    height: 53,
+    borderRadius: 10,
   },
-  button:{
-    
+  content:{
+      
   }
   
 });

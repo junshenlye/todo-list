@@ -14,7 +14,7 @@ let data = [
 export function TaskCard() {
     return(
         <View>
-
+            <Text>Task 1</Text>
         </View>
     );
 };
