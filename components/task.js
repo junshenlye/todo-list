@@ -1,4 +1,4 @@
-import { StyleSheet, Text, View, FlatList} from 'react-native';
+import { StyleSheet, Text, View, Pressable, Button} from 'react-native';
 
 const i = 10;
 let data = [
@@ -14,7 +14,10 @@ let data = [
 export function TaskCard() {
     return(
         <View style={styles.container}>
-            <Text style={styles.content}>Task 1</Text>
+            <Pressable style={styles.container1}>
+                <Button style={styles.button} title=''></Button>
+                <Text style={styles.content}>Task 1</Text>
+            </Pressable>
         </View>
     );
 };
@@ -23,7 +26,15 @@ const styles = StyleSheet.create({
     container: {
         flex: 1,
     },
+    container1:{
+        // backgroundColor: '#000000',
+        flex: 1,
+        flexDirection: 'row',
+    },
     content: {
         padding: 10,
-    }, 
+    },
+    button:{
+        
+    }
 })
