@@ -13,9 +13,17 @@ let data = [
 ]
 export function TaskCard() {
     return(
-        <View>
-            <Text>Task 1</Text>
+        <View style={styles.container}>
+            <Text style={styles.content}>Task 1</Text>
         </View>
     );
 };
 
+const styles = StyleSheet.create({
+    container: {
+        flex: 1,
+    },
+    content: {
+        padding: 10,
+    }, 
+})

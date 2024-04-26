@@ -7,7 +7,7 @@ export default function App() {
       <View style={styles.taskWrapper}>
         <Text style={styles.title}>Today's Tasks</Text> 
         <View style={styles.items}>
-          <TaskCard style={styles.content}></TaskCard>
+          <TaskCard></TaskCard>
         </View>
       </View>
     </View>
@@ -33,10 +33,5 @@ const styles = StyleSheet.create({
     height: 53,
     borderRadius: 10,
   },
-  content:{
-      padding: 10,
-      display: flex,
-      flex: 1,
-  }
   
 });
