@@ -1,4 +1,5 @@
-import { StyleSheet, Text, View, Pressable, Button} from 'react-native';
+import { StyleSheet, Text, View, Pressable} from 'react-native';
+import { CheckBox } from '@rneui/themed';
 
 const i = 10;
 let data = [
@@ -15,7 +16,7 @@ export function TaskCard() {
     return(
         <View style={styles.container}>
             <Pressable style={styles.container1}>
-                <Button style={styles.button} title=''></Button>
+                <CheckBox></CheckBox>
                 <Text style={styles.content}>Task 1</Text>
             </Pressable>
         </View>
@@ -35,6 +36,8 @@ const styles = StyleSheet.create({
         padding: 10,
     },
     button:{
-        
+        width: 10,
+        height: 10,
+        backgroundColor: '#000000'
     }
 })
