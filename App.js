@@ -34,7 +34,9 @@ const styles = StyleSheet.create({
     borderRadius: 10,
   },
   content:{
-      
+      padding: 10,
+      display: flex,
+      flex: 1,
   }
   
 });
