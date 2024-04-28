@@ -19,6 +19,7 @@ export function TaskCard() {
                 <CheckBox></CheckBox>
                 <Text style={styles.content}>Task 1</Text>
             </Pressable>
+            <Text></Text>
         </View>
     );
 };
