@@ -12,6 +12,9 @@ let data = [
         text: "nothing bro"
     }
 ]
+
+
+// Practise Passing Props & Props Drilling(passing functions)
 export function TaskCard() {
     return(
         <View style={styles.container}>
