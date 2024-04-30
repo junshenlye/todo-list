@@ -1,5 +1,5 @@
 import { StyleSheet, Text, View, Pressable} from 'react-native';
-import { useState } from 'react';
+import React from 'react';
 import { CheckBox } from '@rneui/themed';
 
 const i = 10;
@@ -17,10 +17,18 @@ let data = [
 
 // Practise Passing Props & Props Drilling(passing functions)
 export function TaskCard() {
+    const [checked, setChecked] = React.useState(true);
+    const toggleCheckBox = () => setChecked(!checked)
     return(
         <View style={styles.container}>
             <Pressable style={styles.container1}>
-                <CheckBox></CheckBox>
+                <CheckBox
+                checked={checked}
+                onPress={toggleCheckBox}
+                iconType= "material-community"
+                checkedIcon= "checkbox-outline"
+                uncheckedIcon={'checkbox-blank-outline'}
+                />
                 <Text style={styles.content}>Task 1</Text>
             </Pressable>
             <Text></Text>
