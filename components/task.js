@@ -18,18 +18,19 @@ let data = [
 // Practise Passing Props & Props Drilling(passing functions)
 export function TaskCard() {
     const [checked, setChecked] = React.useState(true);
-    const toggleCheckBox = () => setChecked(!checked)
+    const toggleCheckBox = () => setChecked(!checked);
+    const paddingValue = 10;
     return(
         <View style={styles.container}>
             <Pressable style={styles.container1}>
                 <CheckBox
-                checked={checked}
-                onPress={toggleCheckBox}
-                iconType= "material-community"
-                checkedIcon= "checkbox-outline"
-                uncheckedIcon={'checkbox-blank-outline'}
+                    checked={checked}
+                    onPress={toggleCheckBox}
+                    iconType= "material-community"
+                    checkedIcon= "checkbox-outline"
+                    uncheckedIcon={'checkbox-blank-outline'}
                 />
-                <Text style={styles.content}>Task 1</Text>
+                <Text style={[styles.content, { padding: paddingValue}]}>Task 1</Text>
             </Pressable>
             <Text></Text>
         </View>
@@ -41,15 +42,16 @@ const styles = StyleSheet.create({
         flex: 1,
     },
     container1:{
-        // backgroundColor: '#000000',
+        // backgroundColor: '#505050',
         flex: 1,
         flexDirection: 'row',
+        
     },
     content: {
-        padding: 10,
+
     },
     button:{
-        width: 10,
+        width: 20,
         height: 10,
         backgroundColor: '#000000'
     }
