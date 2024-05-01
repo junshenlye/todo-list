@@ -1,4 +1,4 @@
-import { StyleSheet, Text, View, Pressable} from 'react-native';
+import { StyleSheet, Text, View} from 'react-native';
 import React from 'react';
 import { CheckBox } from '@rneui/themed';
 
@@ -22,8 +22,9 @@ export function TaskCard() {
     const paddingValue = 10;
     return(
         <View style={styles.container}>
-            <Pressable style={styles.container1}>
+            <View style={styles.container1}>
                 <CheckBox
+                    center
                     checked={checked}
                     onPress={toggleCheckBox}
                     iconType= "material-community"
@@ -31,7 +32,7 @@ export function TaskCard() {
                     uncheckedIcon={'checkbox-blank-outline'}
                 />
                 <Text style={[styles.content, { padding: paddingValue}]}>Task 1</Text>
-            </Pressable>
+            </View>
             <Text></Text>
         </View>
     );
@@ -42,7 +43,6 @@ const styles = StyleSheet.create({
         flex: 1,
     },
     container1:{
-        // backgroundColor: '#505050',
         flex: 1,
         flexDirection: 'row',
         
