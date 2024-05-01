@@ -6,7 +6,9 @@ export default function App() {
     <View style={styles.container}>
       <View style={styles.taskWrapper}>
         <Text style={styles.title}>Today's Tasks</Text> 
-        <View style={styles.items}>
+        <View 
+          style={styles.items}
+          >
           <TaskCard></TaskCard>
         </View>
       </View>

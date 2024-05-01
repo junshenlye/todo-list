@@ -1,7 +1,7 @@
 import { StyleSheet, Text, View} from 'react-native';
 import React from 'react';
 import { CheckBox } from '@rneui/themed';
-
+const num = 1;
 const i = 10;
 let data = [
     {
@@ -31,7 +31,7 @@ export function TaskCard() {
                     checkedIcon= "checkbox-outline"
                     uncheckedIcon={'checkbox-blank-outline'}
                 />
-                <Text style={[styles.content, { padding: paddingValue}]}>Task 1</Text>
+                <Text style={[styles.content, { padding: paddingValue}]}>{data[num].text}</Text>
             </View>
             <Text></Text>
         </View>
