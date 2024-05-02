@@ -1,6 +1,18 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View, Button, Switch} from 'react-native';
-import {TaskCard} from './components/task'
+import { TaskCard } from './components/task'
+
+
+let data = [
+  {
+      ID: 1,
+      text: "goodbro"
+  },
+  { 
+      ID: 2,
+      text: "nothing bro"
+  }
+]
 export default function App() {
   return (
     <View style={styles.container}>
@@ -9,7 +21,13 @@ export default function App() {
         <View 
           style={styles.items}
           >
-          <TaskCard></TaskCard>
+          {
+            data.map((item) =>
+            <View style={styles.taskWrapper}>
+              <TaskCard></TaskCard>
+            </View>)
+          }
+          {/* <TaskCard></TaskCard> */}
         </View>
       </View>
     </View>
@@ -24,6 +42,7 @@ const styles = StyleSheet.create({
   taskWrapper:{
     paddingTop: 94,
     paddingHorizontal: 20,
+
   },
   title: {
     fontSize: 24,
