@@ -23,6 +23,7 @@ export function TaskCard() {
     return(
         <View style={styles.container}>
             <View style={styles.container1}>
+               <View style={styles.content}> 
                 <CheckBox
                     center
                     checked={checked}
@@ -31,7 +32,8 @@ export function TaskCard() {
                     checkedIcon= "checkbox-outline"
                     uncheckedIcon={'checkbox-blank-outline'}
                 />
-                <Text style={[styles.content, { padding: paddingValue}]}>{data[num].text}</Text>
+                </View>
+                <Text>{data[num].text}</Text>
             </View>
             <Text></Text>
         </View>
@@ -45,14 +47,7 @@ const styles = StyleSheet.create({
     container1:{
         flex: 1,
         flexDirection: 'row',
-        
     },
     content: {
-
-    },
-    button:{
-        width: 20,
-        height: 10,
-        backgroundColor: '#000000'
     }
 })

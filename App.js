@@ -11,24 +11,29 @@ let data = [
   { 
       ID: 2,
       text: "nothing bro"
+  },
+  { 
+    ID: 2,
+    text: "nothing bro"
+  },
+  { 
+    ID: 2,
+    text: "nothing bro"
   }
+  
 ]
 export default function App() {
   return (
     <View style={styles.container}>
       <View style={styles.taskWrapper}>
         <Text style={styles.title}>Today's Tasks</Text> 
-        <View 
-          style={styles.items}
-          >
           {
-            data.map((item) =>
-            <View style={styles.taskWrapper}>
-              <TaskCard></TaskCard>
+            data.map(() =>
+            <View style={styles.items}>
+                <TaskCard></TaskCard>
+                <View style={styles.spacing}></View>
             </View>)
           }
-          {/* <TaskCard></TaskCard> */}
-        </View>
       </View>
     </View>
   );
@@ -42,18 +47,17 @@ const styles = StyleSheet.create({
   taskWrapper:{
     paddingTop: 94,
     paddingHorizontal: 20,
-
   },
   title: {
     fontSize: 24,
     fontWeight: 'bold',
-    padding: 10,
+    padding: 12,
   },
   items: {
     backgroundColor: '#FFFFFF',
     width: 335,
     height: 75,
     borderRadius: 10,
+    margin: 10,
   },
-  
 });
