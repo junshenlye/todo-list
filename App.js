@@ -57,11 +57,11 @@ const styles = StyleSheet.create({
   items: {
     backgroundColor: '#FFFFFF',
     width: 335,
-    height: 75,
+    height: 65,
     borderRadius: 10,
     margin: 10,
   },
   writtenTask:{
-    
+
   }
 });

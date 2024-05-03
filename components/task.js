@@ -51,13 +51,10 @@ const styles = StyleSheet.create({
     cardWrapper:{
         flex: 1,
         flexDirection: 'row',
+        alignItems: 'center',
     },
     content: {
-        flex: 1,
-        flexDirection: 'row',
-        alignItems: '',
     },
     textBox: {
-        padding: 20
     }
 })
