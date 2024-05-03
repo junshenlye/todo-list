@@ -24,7 +24,7 @@ export function TaskCard() {
     const paddingValue = 10;
     return(
         <View style={styles.container}>
-            <View style={styles.container1}>
+            <View style={styles.cardWrapper}>
                <View style={styles.content}> 
                 <CheckBox
                     center
@@ -35,7 +35,9 @@ export function TaskCard() {
                     uncheckedIcon={'checkbox-blank-outline'}
                 />
                 </View>
-                <Text>{data[num].text}</Text>
+                <View style={styles.textBox}>
+                    <Text>{data[num].text}</Text>
+                </View>
             </View>
             <Text></Text>
         </View>
@@ -46,10 +48,16 @@ const styles = StyleSheet.create({
     container: {
         flex: 1,
     },
-    container1:{
+    cardWrapper:{
         flex: 1,
         flexDirection: 'row',
     },
     content: {
+        flex: 1,
+        flexDirection: 'row',
+        alignItems: '',
+    },
+    textBox: {
+        padding: 20
     }
 })
