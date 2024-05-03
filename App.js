@@ -2,7 +2,6 @@ import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View, Button, Switch} from 'react-native';
 import { TaskCard } from './components/task'
 
-
 let data = [
   {
       ID: 1,
@@ -13,12 +12,12 @@ let data = [
       text: "nothing bro"
   },
   { 
-    ID: 2,
-    text: "nothing bro"
+      ID: 2,
+      text: "nothing bro"
   },
   { 
-    ID: 2,
-    text: "nothing bro"
+      ID: 2,
+      text: "nothing bro"
   }
   
 ]
@@ -34,6 +33,8 @@ export default function App() {
                 <View style={styles.spacing}></View>
             </View>)
           }
+      </View>
+      <View style={styles.writtenTask}>
       </View>
     </View>
   );
@@ -60,4 +61,7 @@ const styles = StyleSheet.create({
     borderRadius: 10,
     margin: 10,
   },
+  writtenTask:{
+    
+  }
 });
