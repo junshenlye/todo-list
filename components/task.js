@@ -6,11 +6,11 @@ const i = 10;
 let data = [
     {
         ID: 1,
-        text: "goodbro"
+        text: "good bro"
     },
     { 
         ID: 2,
-        text: "nothing bro"
+        text: "nothing bro othing broothing broothing othing broothing broothing broothing broothing bro broothing broothing broothing broothing bro"
     }
 ]
 
@@ -36,7 +36,7 @@ export function TaskCard() {
                 />
                 </View>
                 <View style={styles.textBox}>
-                    <Text>{data[num].text}</Text>
+                    <Text numberOfLines={3} ellipsizeMode="tail" style={styles.text}>{data[num].text}</Text>
                 </View>
             </View>
             <Text></Text>
@@ -56,5 +56,10 @@ const styles = StyleSheet.create({
     content: {
     },
     textBox: {
+        // backgroundColor: '#050505',
+        width: 250,
+    },
+    text: {
+        fontSize: 16,
     }
 })

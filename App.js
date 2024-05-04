@@ -27,7 +27,7 @@ export default function App() {
       <View style={styles.taskWrapper}>
         <Text style={styles.title}>Today's Tasks</Text> 
           {
-            data.map(() =>
+            data.map((items) =>
             <View style={styles.items}>
                 <TaskCard></TaskCard>
                 <View style={styles.spacing}></View>
@@ -35,6 +35,7 @@ export default function App() {
           }
       </View>
       <View style={styles.writtenTask}>
+        
       </View>
     </View>
   );
@@ -46,6 +47,7 @@ const styles = StyleSheet.create({
     backgroundColor: '#E8EAED',
   },
   taskWrapper:{
+    flex: 1, 
     paddingTop: 94,
     paddingHorizontal: 20,
   },
