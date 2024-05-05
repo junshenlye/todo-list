@@ -40,10 +40,39 @@ const styles = StyleSheet.create({
     backgroundColor: '#E8EAED',
   },
   writeTaskWrapper:{
-
+    // backgroundColor: '#FFFFFF',
+    flex: 1,
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'space-between',
+    marginTop: 350,
+  },
+  addWrapper:{
+    backgroundColor: '#FFFFFF',
+    width: 60,
+    height: 60,
+    borderRadius: 30,
+    justifyContent: 'center',
+    alignItems: 'center',
+    marginRight: 35,
+    shadowColor: '#000',
+    shadowOffset: { width: 0, height: 1 },
+    shadowOpacity: 0.8,
+    shadowRadius: 2,  
+    elevation: 5
   },
   input:{
-
+    width: 246,
+    height: 45,
+    borderRadius: 23,
+    backgroundColor: '#FFFFFF',
+    textAlign: 'center',
+    marginLeft: 35,
+    shadowColor: '#000',
+    shadowOffset: { width: 0, height: 1 },
+    shadowOpacity: 0.8,
+    shadowRadius: 2,  
+    elevation: 5
   },
   taskWrapper:{
     flex: 1, 
