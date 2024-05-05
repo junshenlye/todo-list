@@ -1,18 +1,8 @@
 import { StyleSheet, Text, View} from 'react-native';
 import React from 'react';
 import { CheckBox } from '@rneui/themed';
+import data from '../assets/data/data.json';
 const num = 1;
-const i = 10;
-let data = [
-    {
-        ID: 1,
-        text: "good bro"
-    },
-    { 
-        ID: 2,
-        text: "nothing bro othing broothing broothing othing broothing broothing broothing broothing bro broothing broothing broothing broothing bro"
-    }
-]
 
 // Practise Passing Props & Props Drilling(passing functions)
 export function TaskCard() {

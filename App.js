@@ -1,26 +1,8 @@
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View, Button, Switch} from 'react-native';
+import { StyleSheet, Text, View, KeyboardAvoidingView, Platform, TextInput, TouchableOpacity} from 'react-native';
 import { TaskCard } from './components/task'
+import data from './assets/data/data.json'
 
-let data = [
-  {
-      ID: 1,
-      text: "goodbro"
-  },
-  { 
-      ID: 2,
-      text: "nothing bro"
-  },
-  { 
-      ID: 2,
-      text: "nothing bro"
-  },
-  { 
-      ID: 2,
-      text: "nothing bro"
-  }
-  
-]
 export default function App() {
   return (
     <View style={styles.container}>
@@ -34,9 +16,20 @@ export default function App() {
             </View>)
           }
       </View>
-      <View style={styles.writtenTask}>
-        
-      </View>
+      <KeyboardAvoidingView
+      behavior={Platform.OS === "ios" ? "padding" : "height"}
+      style={styles.writeTaskWrapper}
+      >
+        <TextInput
+        style={styles.input}
+        placeholder='Write a Task'
+        />
+        <TouchableOpacity>
+          <View style={styles.addWrapper}>
+            <Text>+</Text>
+          </View>
+        </TouchableOpacity>
+      </KeyboardAvoidingView>
     </View>
   );
 }
@@ -45,6 +38,12 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: '#E8EAED',
+  },
+  writeTaskWrapper:{
+
+  },
+  input:{
+
   },
   taskWrapper:{
     flex: 1, 
