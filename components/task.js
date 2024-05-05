@@ -14,14 +14,10 @@ let data = [
     }
 ]
 
-
-
-
 // Practise Passing Props & Props Drilling(passing functions)
 export function TaskCard() {
     const [checked, setChecked] = React.useState(true);
     const toggleCheckBox = () => setChecked(!checked);
-    const paddingValue = 10;
     return(
         <View style={styles.container}>
             <View style={styles.cardWrapper}>
