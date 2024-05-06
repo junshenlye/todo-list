@@ -42,7 +42,6 @@ const styles = StyleSheet.create({
     content: {
     },
     textBox: {
-        // backgroundColor: '#050505',
         width: 250,
     },
     text: {

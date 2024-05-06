@@ -40,7 +40,6 @@ const styles = StyleSheet.create({
     backgroundColor: '#E8EAED',
   },
   writeTaskWrapper:{
-    // backgroundColor: '#FFFFFF',
     flex: 1,
     flexDirection: 'row',
     alignItems: 'center',
@@ -86,12 +85,14 @@ const styles = StyleSheet.create({
   },
   items: {
     backgroundColor: '#FFFFFF',
-    width: 335,
+    width: 345,
     height: 65,
     borderRadius: 10,
     margin: 10,
+    shadowColor: '#000',
+    shadowOffset: { width: 0, height: 1 },
+    shadowOpacity: 0.8,
+    shadowRadius: 2,  
+    elevation: 5
   },
-  writtenTask:{
-
-  }
 });
