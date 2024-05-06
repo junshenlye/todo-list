@@ -1,9 +1,11 @@
-import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View, KeyboardAvoidingView, Platform, TextInput, TouchableOpacity} from 'react-native';
+import { useState } from 'react';
 import { TaskCard } from './components/task'
 import data from './assets/data/data.json'
 
 export default function App() {
+  const [task, setTask] = useState();
+  const [taskItems, setTaskItems] = useState([])
   return (
     <View style={styles.container}>
       <View style={styles.taskWrapper}>
