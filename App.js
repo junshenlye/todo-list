@@ -15,6 +15,7 @@ export default function App() {
             <View style={styles.items}>
                 <TaskCard></TaskCard>
                 <View style={styles.spacing}></View>
+                <View></View>
             </View>)
           }
       </View>
